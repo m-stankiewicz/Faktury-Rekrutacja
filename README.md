@@ -117,28 +117,6 @@
 - **SOLID:** Each class and method has a single responsibility.
 - **DRY:** Code reuse is achieved through relationships and factories.
 - **KISS:** The code is simple and focused on basic functionality.
-  
----
-
-## Helper Commands
-
-1. **Reset and re-run migrations:**
-
-   ```bash
-   php artisan migrate:fresh
-   ```
-
-2. **Start Tinker console:**
-
-   ```bash
-   php artisan tinker
-   ```
-
-3. **Generate test data (factories):**
-
-   ```bash
-   php artisan make:factory CustomerFactory
-   ```
 
 ---
 
