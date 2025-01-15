@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Traits\Models\InvoicePosition\Relations;
+namespace App\Traits\Relations\Models\InvoicePosition;
 
 use App\Models\InvoicePosition;
 

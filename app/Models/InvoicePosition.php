@@ -2,7 +2,7 @@
 
 namespace App\Models;
 
-use App\Traits\Models\Invoice\Relations\InvoiceBelongsToTrait;
+use App\Traits\Relations\Models\Invoice\InvoiceBelongsToTrait;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 

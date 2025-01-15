@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Traits\Models\Invoice\Relations;
+namespace App\Traits\Relations\Models\Invoice;
 
 use App\Models\Invoice;
 

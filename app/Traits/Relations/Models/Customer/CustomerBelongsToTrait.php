@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Traits\Models\Customer\Relations;
+namespace App\Traits\Relations\Models\Customer;
 
 use App\Models\Customer;
 
