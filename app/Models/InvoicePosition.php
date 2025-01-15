@@ -2,17 +2,13 @@
 
 namespace App\Models;
 
+use App\Traits\Models\Invoice\Relations\InvoiceBelongsToTrait;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
 class InvoicePosition extends Model
 {
-    use HasFactory;
+    use HasFactory, InvoiceBelongsToTrait;
 
-    protected $fillable = ['invoice_id', 'description', 'tax', 'amount', 'price'];
-
-    public function invoice()
-    {
-        return $this->belongsTo(Invoice::class);
-    }
+    protected $fillable = ['description', 'tax', 'amount', 'price'];
 }

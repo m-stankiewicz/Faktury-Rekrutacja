@@ -2,22 +2,14 @@
 
 namespace App\Models;
 
+use App\Traits\Models\Customer\Relations\CustomerBelongsToTrait;
+use App\Traits\Models\InvoicePosition\Relations\InvoicePositionHasManyTrait;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
 class Invoice extends Model
 {
-    use HasFactory;
-    
-    protected $fillable = ['customer_id', 'number', 'date_sale', 'date_receive'];
+    use HasFactory, CustomerBelongsToTrait, InvoicePositionHasManyTrait;
 
-    public function customer()
-    {
-        return $this->belongsTo(Customer::class);
-    }
-
-    public function positions()
-    {
-        return $this->hasMany(InvoicePosition::class);
-    }
+    protected $fillable = ['number', 'date_sale', 'date_receive'];
 }
